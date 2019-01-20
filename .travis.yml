@@ -1,0 +1,7 @@
+language: java
+script: ./build-travis.sh
+jdk:
+  - openjdk8
+cache:
+  directories:
+    - $HOME/.m2
