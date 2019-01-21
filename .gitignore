@@ -17,3 +17,5 @@ project/plugins/project/
 .worksheet
 .idea
 scala-maven/.idea/saveactions_settings.xml
+
+.DS_Store
