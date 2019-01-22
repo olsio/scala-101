@@ -6,9 +6,16 @@ matrix:
       jdk: oraclejdk8
       language: java
       script: 'mvn clean package'
+      cache:
+        directories:
+          - $HOME/.m2
     - before_script:
         - 'cd scala-basics'
       jdk: oraclejdk8
       language: scala
       script:
         - sbt ++$TRAVIS_SCALA_VERSION test
+      cache:
+        directories:
+          - $HOME/.ivy2/cache
+          - $HOME/.sbt
