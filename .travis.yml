@@ -6,3 +6,9 @@ matrix:
       jdk: oraclejdk8
       language: java
       script: 'mvn clean package'
+    - before_script:
+        - 'cd scala-basics'
+      jdk: oraclejdk8
+      language: scala
+      script:
+        - sbt ++$TRAVIS_SCALA_VERSION test
