@@ -16,6 +16,6 @@ project/plugins/project/
 .scala_dependencies
 .worksheet
 .idea
-scala-maven/.idea/saveactions_settings.xml
 
 .DS_Store
+*.iml

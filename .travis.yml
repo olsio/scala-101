@@ -10,6 +10,16 @@ matrix:
         directories:
           - $HOME/.m2
     - before_script:
+        - 'cd scala-docker'
+      jdk: oraclejdk8
+      language: java
+      services:
+        - docker
+      script: 'mvn clean compile jib:dockerBuild'
+      cache:
+        directories:
+          - $HOME/.m2
+    - before_script:
         - 'cd scala-basics'
       jdk: oraclejdk8
       language: scala
